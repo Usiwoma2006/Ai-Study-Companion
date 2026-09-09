@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal: #335C67;
+  --color-cream: #FFF3B0;
+  --color-orange: #E09F3E;
+  --color-brick: #9E2A2B;
+  --color-oxblood: #540B0E;
+
+  --font-display: var(--font-fraunces);
+  --font-ui: var(--font-inter);
+}
+
+body {
+  @apply bg-cream text-oxblood font-ui;
+}
+
+h1, h2, h3 {
+  @apply font-display;
+}

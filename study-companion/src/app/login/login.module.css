@@ -1,0 +1,125 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF3B0;
+  padding: 1.5rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(84, 11, 14, 0.08);
+}
+
+.title {
+  color: #335C67;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.label {
+  color: #540B0E;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.input {
+  padding: 0.7rem 0.85rem;
+  border: 1.5px solid #D9D9C7;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #540B0E;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.input:focus {
+  border-color: #335C67;
+}
+
+.error {
+  background: #9E2A2B1A;
+  color: #9E2A2B;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #E09F3E;
+  color: #540B0E;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.footerText {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #335C67;
+}
+
+.footerLink {
+  color: #9E2A2B;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  text-align: center;
+  color: #335C67;
+  font-size: 0.8rem;
+  margin: 1.25rem 0;
+  position: relative;
+}
+
+.googleButton {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1.5px solid #335C67;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #335C67;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.googleButton:hover {
+  background-color: #FFF3B0;
+}

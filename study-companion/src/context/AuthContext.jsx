@@ -3,6 +3,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
 // 1. Create the context object — this is the "box"
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api";
 const AuthContext = createContext(null);
 
 // 2. This is the provider — it wraps your whole app (in layout.js)
@@ -26,7 +27,7 @@ export function AuthProvider({ children }) {
   }, []);
 
   async function login(email, password) {
-    const res = await fetch("http://localhost:8000/api/auth/login/", {
+    const res = await fetch(`${API_URL}/auth/login/`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
@@ -53,7 +54,7 @@ export function AuthProvider({ children }) {
   }
 
   async function signup(email, password) {
-    const res = await fetch("http://localhost:8000/api/auth/signup/", {
+    const res = await fetch(`${API_URL}/auth/signup/`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
@@ -76,7 +77,7 @@ export function AuthProvider({ children }) {
     }
   }
 async function googleLogin(code) {
-  const res = await fetch("http://localhost:8000/api/auth/google/", {
+  const res = await fetch(`${API_URL}/auth/google/`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ code }),
